@@ -25,9 +25,9 @@ public class MailTests {
     @Test
     public void testHtmlMail(){
         Context context=new Context();
-        context.setVariable("username","niecf");
+        context.setVariable("username","赵剑鹏");
         String content=templateEngine.process("/mail/demo",context);
         System.out.println(content);
-        mailClient.sendMail("602065880@qq.com","HTML",content);
+        mailClient.sendMail("cszjpzhao@qq.com","HTML",content);
     }
 }
